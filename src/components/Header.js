@@ -84,7 +84,7 @@ function Header() {
           <p className="link lg:inline-flex">Food & Grocery</p>
         </div>
       </div>
-<div className='flex flex-col md:flex-row justify-center items-center gap-6' >
+<div className='flex flex-col md:flex-row justify-center items-center gap-6 flex-wrap' >
      {/* Render the filtered products */}
      {searchQuery.length > 0 && filteredProducts.length > 0 ? (
         filteredProducts.map((product) => (
