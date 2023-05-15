@@ -9,9 +9,7 @@ function Header() {
   return (
     <header>
         {/* Top nav */}
-        <div className="flex items-center bg-black p-1 flex-grow px-2 py-4 pl-4">
-            <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
-            </div>
+        <div className="flex items-center pt-8 bg-black p-1 flex-grow px-2 py-4 pl-4">
             {/* Search */} 
             <div className="hidden sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
                 <input className="h-full w-[80vw] md:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2 " type="text" placeholder='Search Items...' />
@@ -39,7 +37,7 @@ function Header() {
 
         {/* Bottom nav */}
         <div>
-            <div className="flex items-center space-x-3 p-2 pl-6 bg-black text-white text-sm">
+            <div className="flex items-center space-x-3 pb-4 pl-6 bg-black text-white text-sm">
                 
                 
                 <p className="link">Business</p>
