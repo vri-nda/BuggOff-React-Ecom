@@ -21,7 +21,7 @@ function ProductFeed() {
   if (!data) return <p>No profile data</p>;
 
   return (
-    <div className="grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:-mt-52 mx-auto">
+    <div className="flex flex-wrap ">
 
       {data && data.slice(0,data.length).map(({ id, title, price, description, category, image }) => (
         <Product 
