@@ -44,7 +44,7 @@ function Header() {
         {/* Search */}
         <div className="flex sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
           <input
-            className="h-full w-[40vw] smw-[60vw] xl:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2"
+            className="h-full w-[36vw] smw-[60vw] xl:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2"
             type="text"
             placeholder="Search Items..."
             value={searchQuery}
@@ -53,12 +53,15 @@ function Header() {
               debouncedSearch(e.target.value);
             }}
           />
+          <div className='flex justify-center w-[100%] items-center'>
           <SearchIcon className="h-12 p-4" />
+          </div>
+          
         </div>
         {/* Right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
           <div className="link">
-            <a className="bg-blue-500 h-10 w-20 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600 p-5">
+            <a className="bg-blue-500 h-10 w-10 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600 p-5">
               Sign Up
             </a>
           </div>
