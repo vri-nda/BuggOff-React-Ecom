@@ -86,8 +86,24 @@ function Header() {
      {searchQuery.length > 0 && filteredProducts.length > 0 ? (
         filteredProducts.map((product) => (
           <div key={product.id}>
-            <h2>{product.title}</h2>
-            <p>{product.description}</p>
+
+
+            <div className="flex mt-4 flex-col w-80 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="relative pt-2 pb-2 pb-3/4 w-[100%] h-[80%] flex justify-center items-center">
+            <img src={product.image} layout="fill" objectFit="cover" width={200} />
+            </div>
+            <div className="p-4 flex flex-col flex-grow">
+                <p className="text-gray-500 uppercase text-xs mb-1">{product.category}</p>
+                <h2 className="text-lg font-medium mb-1">{product.title}</h2>
+                <p className="text-gray-500 text-sm mb-2 line-clamp-3">{product.description}</p>
+                <button className="bg-blue-500 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600">
+                    Add to Cart
+                </button>
+                
+            </div>
+        </div>
+
+
           </div>
         ))
       ) : searchQuery.length > 0 && filteredProducts.length === 0 ? (
