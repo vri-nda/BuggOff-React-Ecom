@@ -14,15 +14,13 @@ function Header() {
             </div>
             {/* Search */} 
             <div className="hidden sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
-                <input className="h-full w-[80vw] md:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2 " type="text" />
+                <input className="h-full w-[80vw] md:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2 " type="text" placeholder='Search Items...' />
                 <SearchIcon className="h-12 p-4"/>
             </div>
             {/* Right */}
             <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
                 <div className="link">
-                <button className="bg-blue-500 h-10 w-20 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600">
-                <p className="font-extrabold md:text-sm">Sign Up</p>
-                </button>
+                <a className="bg-blue-500 h-10 w-20 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600 p-5">Sign Up</a>
                 
                 
                 

@@ -16,7 +16,7 @@ function Product({ id, title, price, description, category, image }) {
 
     return (
         <div className="flex flex-col w-80 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative pb-3/4 w-[100%] h-[80%] flex justify-center items-center">
+            <div className="relative p-5 w-[100%] h-[80%] flex justify-center items-center">
                 <img src={image} layout="fill" objectFit="cover" height="300px" />
             </div>
             <div className="p-4 flex flex-col flex-grow">
