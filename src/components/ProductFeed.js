@@ -21,7 +21,7 @@ function ProductFeed() {
   if (!data) return <p>No profile data</p>;
 
   return (
-    <div className="flex flex-wrap ">
+    <div className="grid grid-flow-row gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-5  mx-auto">
 
       {data && data.slice(0,data.length).map(({ id, title, price, description, category, image }) => (
         <Product 
@@ -34,9 +34,8 @@ function ProductFeed() {
           image={image}
         />
         ))}
-
-    </div>
-  )
+      </div>
+  );
 }
 
-export default ProductFeed
+export default ProductFeed;
