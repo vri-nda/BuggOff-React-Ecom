@@ -13,12 +13,15 @@ export default function Home({ products }) {
 
       <Header />
 
-      <main className="flex flex-col max-w-screen-2xl mx-auto">
+      <main className="flex flex-col" >
+      
         <div className="flex items-center justify-center">
           <Banner />
         </div>
-
-        <ProductFeed products={products} />
+        <div className="max-w-screen-2xl mx-auto">
+          <ProductFeed />
+        </div> 
+        
       </main>
       <Footer />
     </div>
