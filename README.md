@@ -28,6 +28,6 @@ Also you are required implement some innovative ideas that will make your projec
 
 Your website will be judged on the basis of usability, UI/UX, bug fixes, features implementation, & innovation.
 
-FEATURE LINK : https://qr.page/g/2w5yIulVk43
+FEATURE LINK : bit.ly/42ZwGOd
 
 
