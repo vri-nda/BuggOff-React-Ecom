@@ -16,7 +16,7 @@ function Product({ id, title, price, description, category, image }) {
 
     return (
         <div className="flex flex-col w-80 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative pb-3/4">
+            <div className="relative pb-3/4 w-[100%] h-[80%] flex justify-center items-center">
                 <img src={image} layout="fill" objectFit="cover" />
             </div>
             <div className="p-4 flex flex-col flex-grow">
@@ -26,7 +26,7 @@ function Product({ id, title, price, description, category, image }) {
                     {Array(rating)
                         .fill()
                         .map((_, i) => (
-                            <StarIcon key={i} className="h-5 w-5 text-yellow-1  00" />
+                            <StarIcon key={i} className="h-5 w-5 text-yellow-1" />
                         ))}
                 </div>
                 <p className="text-gray-500 text-sm mb-2 line-clamp-3">{description}</p>
@@ -37,6 +37,7 @@ function Product({ id, title, price, description, category, image }) {
                 <button className="bg-blue-500 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600">
                     Add to Cart
                 </button>
+                
             </div>
         </div>
     );
