@@ -44,7 +44,7 @@ function Header() {
         {/* Search */}
         <div className="flex sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
           <input
-            className="h-full w-[36vw] smw-[60vw] xl:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2"
+            className="h-full w-[90vw] sm:w-[80vw] xl:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2"
             type="text"
             placeholder="Search Items..."
             value={searchQuery}
@@ -53,7 +53,7 @@ function Header() {
               debouncedSearch(e.target.value);
             }}
           />
-          <div className='flex justify-center w-[100%] items-center'>
+          <div className='flex justify-center items-center'>
           <SearchIcon className="h-12 p-4" />
           </div>
           
