@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { debounce } from 'lodash';
+import axios from 'axios';
 import {
   MenuIcon,
   SearchIcon,
