@@ -11,11 +11,13 @@ function Product({ id, title, price, description, category, image }) {
     const [rating] = useState(
         Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
     );
-    
+
+    const [hasPrime] = useState(Math.random() < 0.5);
+
     return (
         <div className="flex flex-col w-80 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
             <div className="relative pb-3/4">
-                <Image src={image} layout="fill" objectFit="cover" alt={title} />
+                <img src={image} layout="fill" objectFit="cover" />
             </div>
             <div className="p-4 flex flex-col flex-grow">
                 <p className="text-gray-500 uppercase text-xs mb-1">{category}</p>
