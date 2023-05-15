@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+
 import {
     MenuIcon,
     SearchIcon,
@@ -12,16 +13,14 @@ function Header() {
      {/* Top nav */}
         <div className="flex items-center pt-8 bg-black p-1 flex-grow px-2 py-4 pl-4">
             {/* Search */} 
-            <div className="hidden sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
+            <div className=" flex sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
                                <input className="h-full w-[80vw] md:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2 " type="text" placeholder='Search Items...' />
                 <SearchIcon className="h-12 p-4"/>
             </div>
             {/* Right */}
             <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
                 <div className="link">
-                <a className="bg-blue-500 h-10 w-20 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600 p-5">Sign Up</a>
-         
-                
+                <a className="bg-blue-500 h-10 w-20 text-white py-2 rounded-lg font-medium transition-colors duration-300 hover:bg-blue-600 p-5" href="../components/register">Sign Up</a>
                     
                 </div>
                 

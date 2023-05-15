@@ -5,6 +5,8 @@ import ProductFeed from "../components/ProductFeed";
 import Footer from "../components/Footer";
 
 export default function Home({ products }) {
+
+  
   return (
     <div className="bg-gray-100">
       <Head>
