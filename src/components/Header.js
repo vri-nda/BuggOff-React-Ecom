@@ -8,6 +8,7 @@ import {
 function Header() {
   return (
     <header>
+    
         {/* Top nav */}
         <div className="flex items-center pt-8 bg-black p-1 flex-grow px-2 py-4 pl-4">
             {/* Search */} 
