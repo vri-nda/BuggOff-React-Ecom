@@ -84,7 +84,7 @@ function Header() {
           <p className="link lg:inline-flex">Food & Grocery</p>
         </div>
       </div>
-
+<div className='flex flex-col md:flex-row justify-center items-center gap-6' >
      {/* Render the filtered products */}
      {searchQuery.length > 0 && filteredProducts.length > 0 ? (
         filteredProducts.map((product) => (
@@ -92,7 +92,7 @@ function Header() {
 
 
             <div className="flex mt-4 flex-col w-80 mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative pt-2 pb-2 pb-3/4 w-[100%] h-[80%] flex justify-center items-center">
+            <div className="relative pt-2 pb-2 pb-3/4 w-[100%] h-[100%] flex justify-center items-center">
             <img src={product.image} layout="fill" objectFit="cover" width={200} />
             </div>
             <div className="p-4 flex flex-col flex-grow">
@@ -112,6 +112,7 @@ function Header() {
       ) : searchQuery.length > 0 && filteredProducts.length === 0 ? (
         <p>No matching products found.</p>
       ) : null}
+      </div>
     </header>
   );
 }
