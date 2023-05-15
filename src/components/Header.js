@@ -42,7 +42,7 @@ function Header() {
       {/* Top nav */}
       <div className="flex items-center pt-8 bg-black p-1 flex-grow px-2 py-4 pl-4">
         {/* Search */}
-        <div className="hidden sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
+        <div className="flex sm:flex items-center h-10 w-10 rounded-md flex-grow cursor-pointer bg-pink-400 hover:bg-green-500">
           <input
             className="h-full w-[80vw] md:w-[90vw]  flex-shrink rounded-l-md focus:outline-none px-2"
             type="text"
